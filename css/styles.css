@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,300&display=swap');
+
+/* General */
+
+body, a {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: hsl(233, 8%, 62%);
+    overflow-x: hidden;
+
+}
+
+header {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: white;
+    z-index: 1;
+}
+
+.main {
+    position: relative;
+}
+
+.logo {
+    cursor: pointer
+}
+
+
+.navbar-items {
+    list-style: none;
+}
+
+.navbar-items li {
+    display: inline-block;
+    text-transform: capitalize;
+    padding: 0px 15px;
+}
+
+.nav-links {
+    position: relative;
+    transition: all ease-in-out 250ms;
+}
+
+.nav-links:hover {
+    opacity: 0.8;
+}
+
+.nav-links::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    border-radius: 5px;
+    margin: 1.8rem 0;
+    transform: scaleX(0);
+    transition: all  .5s ease-in-out;
+}
+
+.nav-links:hover::after {
+    transform: scaleX(1);
+}
+
+.button {
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    color: white;
+    width: 140px;
+    padding: 10px;
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 0.7rem;
+    transition: all .5s ease-in-out;
+}
+
+.button:hover {
+    opacity: .7;
+}
+
+.container {
+    display: flex;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    padding: 160px 130px;
+    justify-content: space-around;
+    position: relative;
+    
+}
+
+.main-section .title {
+    color: hsl(233, 26%, 24%);
+    font-weight: 300;
+    font-size: 2.5rem;
+    padding-bottom: 40px;
+}
+
+.main-section .button {
+    margin-top: 2rem;
+}
+
+.hero-bg {
+    position: relative;
+}
+
+.mockup {
+    position: absolute;
+    width: 560px;
+    top: -28rem;
+    left: 117vh;
+}
+
+
+
+/* .hero-image {
+    position: relative;
+    background-image: url('../images/bg-intro-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 17.5rem;
+}
+
+.hero-image::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/image-mockups.png');
+    background-repeat: no-repeat;
+} */
